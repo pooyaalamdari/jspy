@@ -22,4 +22,8 @@ file = open('cars_json.txt', 'w')
 json.dump(cars, file)
 file.close()
 
-#after run the json file will be created in the cars_json.txt
+#use json file in python file as string
+# "" and '' difference is important in json
+my_json_string = '[{"name": "Alfa Romeo"}, {"released": 1950}]'
+anothe_cars = json.loads(my_json_string) #use loads NOT load
+print(anothe_cars[0]['name'])
