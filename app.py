@@ -1,6 +1,5 @@
-from file_operation import save_to_file
+from file_operation import save_to_file , read_file
 
 save_to_file('Alex','data.txt')
 
-#if run -> the file with data.txt name will create
-#and content in data.txt file will be Pooya
+print(read_file('data.txt'))
