@@ -1,0 +1,5 @@
+1- create folder in jspy/jspy and named it for example utils
+2- build a python file with (__init__.py) name in utils folder
+3-drag and drop file_operation.py to utils
+4- call file_operation in app.py like this
+-> from utils.file_operation import save_to_file , read_file
