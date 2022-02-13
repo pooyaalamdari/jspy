@@ -1,13 +1,13 @@
 import json
 
-file = open('friends_json.txt', 'r')
+with open('friends_json.txt', 'r') as file:
 
-#reads file and turn it to dictiobary
-file_contents = json.load(file)
-
-file.close()
+    #reads file and turn it to dictiobary
+    file_contents = json.load(file)
 
 print(file_contents['friends'][0])
+#close the file automate
+
 
 
 #convert python dictionary to json file
@@ -17,10 +17,10 @@ cars = [
     {'make':'Ford', 'model':'Focus'}
 ]
 
-file = open('cars_json.txt', 'w')
-#build file and it's name is cars_json.txt
-json.dump(cars, file)
-file.close()
+with open('cars_json.txt', 'w') as file:
+    #build file and it's name is cars_json.txt
+    json.dump(cars, file)
+
 
 #use json file in python file as string
 # "" and '' difference is important in json
